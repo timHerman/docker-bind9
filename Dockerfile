@@ -15,6 +15,7 @@ RUN apt-get -y upgrade
 RUN apt-get install bind9
 
 VOLUME /etc/bind/zones/
+VOLUME /var/log/named/
 
 EXPOSE 53
 
