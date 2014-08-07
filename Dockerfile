@@ -12,7 +12,7 @@ RUN apt-get update
 RUN apt-get -y upgrade
 
 # Basic Requirements
-RUN apt-get install bind9
+RUN apt-get -y install bind9
 
 VOLUME /etc/bind/zones/
 VOLUME /var/log/named/
